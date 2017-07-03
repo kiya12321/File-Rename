@@ -11,6 +11,7 @@ def rename_files():
 
     # (2) for each file rename filename
     for file_name in file_list:
+                                    #takes out numbers, so change as needed
         os.rename(file_name, re.sub("[0-9]", "", file_name))
     os.chdir(saved_path)
 
